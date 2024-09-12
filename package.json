@@ -14,5 +14,8 @@
   "bugs": {
     "url": "https://gitub.com/benallfree/pocketbase-jsvm/issues"
   },
-  "types": "dist/index.d.ts"
+  "types": "dist/index.d.ts",
+  "files": [
+    "*.d.ts"
+  ]
 }
