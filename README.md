@@ -11,7 +11,8 @@ In `tsconfig.json`:
 ```json
 {
   "compilerOptions": {
-    "types": ["pocketbase-jsvm"]
+    "types": ["pocketbase-jsvm"],
+    "moduleResolution": "node"
   }
 }
 ```
