@@ -43,3 +43,25 @@ const asyncFunction = async () => {
   // Your code here
 }
 ```
+
+## Versioning Strategy
+
+`pocketbase-ejs` uses [Upstream Anchoring](https://gist.github.com/benallfree/6baa35e925df06b35b2df755f5776cc7).
+
+- **Our Version** = `Upstream MAJOR.MINOR.(Upstream PATCH × 1000 + Our Revision Number)`
+
+Example:
+
+- **Upstream Version**: `1.2.4`
+- **Our First Revision**: `1.2.4001`
+
+This keeps our fork aligned with upstream releases and allows us to manage our own revisions effectively.
+
+## Updating this fork
+
+```bash
+git fetch --all
+git checkout main
+```
+
+Then, copy the latest `jsvm.d.ts` and update the version number using the Upstream Anchoring technique described above.
