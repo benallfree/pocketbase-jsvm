@@ -1,0 +1,10 @@
+{
+  "mode": "pre",
+  "tag": "rev",
+  "initialVersions": {
+    "pocketbase-jsvm": "0.22.20-rev.0"
+  },
+  "changesets": [
+    "tender-flowers-add"
+  ]
+}
