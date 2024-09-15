@@ -14190,7 +14190,7 @@ namespace core {
     /**
      * Store returns the app runtime store.
      */
-    store(): store.Store<any>
+    store<T = any>(): store.Store<T>
     /**
      * SubscriptionsBroker returns the app realtime subscriptions broker instance.
      */
