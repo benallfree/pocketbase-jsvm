@@ -1,5 +1,11 @@
 # pocketbase-jsvm
 
+## 0.22.20002
+
+### Patch Changes
+
+- b2187cd: Genericized $app.store<T>() for better cache typing
+
 ## 0.22.20001
 
 ### Patch Changes
