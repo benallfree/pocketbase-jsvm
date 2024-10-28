@@ -6,13 +6,13 @@
     "githubUsername": "benallfree"
   },
   "license": "MIT",
-  "homepage": "https://gitub.com/benallfree/pocketbase-jsvm",
+  "homepage": "https://github.com/benallfree/pocketbase-jsvm",
   "repository": {
     "type": "git",
-    "url": "https://gitub.com/benallfree/pocketbase-jsvm.git"
+    "url": "https://github.com/benallfree/pocketbase-jsvm.git"
   },
   "bugs": {
-    "url": "https://gitub.com/benallfree/pocketbase-jsvm/issues"
+    "url": "https://github.com/benallfree/pocketbase-jsvm/issues"
   },
   "types": "dist/index.d.ts",
   "files": [
