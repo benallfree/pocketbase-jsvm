@@ -23,7 +23,7 @@ In your `tsconfig.json`:
 
 ## Important Notes
 
-- **Limited APIs:** The JSVM supports ECMAScript 2020 and includes some custom PocketBase bindings and Goja-Node features like `require()` and `process.env`. It does **not** include Web/Browser APIs or most Node.js APIs.
+- **Limited APIs:** The JSVM supports [most of ECMAScript 2020](https://github.com/dop251/goja/issues/608) and includes some custom PocketBase bindings and Goja-Node features like `require()` and `process.env`. It does **not** include Web/Browser APIs, most Node.js APIs, or anything related to the event loop such as `async`, `Promise`, or `setTimeout`.
 
 - **Version Matching:** Package versions follow PocketBase versions. Since the JSVM API isn't stable yet, use the exact package version that matches your PocketBase version.
 
@@ -39,7 +39,7 @@ const myModule = require('myModule')
 const apiKey = process.env.API_KEY
 
 // ECMAScript 2020 features are supported
-const asyncFunction = async () => {
+const myFunc = () => {
   // Your code here
 }
 ```
