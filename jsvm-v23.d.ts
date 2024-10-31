@@ -5507,7 +5507,7 @@ namespace core {
   /**
    * Store returns the app runtime store.
    */
-  store(): (store.Store<any>)
+  store<T>(): (store.Store<T>)
   /**
    * Cron returns the app cron instance.
    */

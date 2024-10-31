@@ -1,6 +1,6 @@
 {
   "name": "pocketbase-jsvm",
-  "version": "0.23.00001",
+  "version": "0.23.10002",
   "author": {
     "name": "Ben Allfree",
     "githubUsername": "benallfree"
@@ -14,8 +14,8 @@
   "bugs": {
     "url": "https://github.com/benallfree/pocketbase-jsvm/issues"
   },
-  "types": "dist/index.d.ts",
   "files": [
-    "*.d.ts"
+    "*.ts",
+    "CHANGELOG.md"
   ]
 }

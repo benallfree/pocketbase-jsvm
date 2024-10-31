@@ -10,6 +10,8 @@ Install the package:
 npm install pocketbase-jsvm
 ```
 
+### For PocketBase version matching the package version:
+
 In your `tsconfig.json`:
 
 ```json
@@ -19,6 +21,14 @@ In your `tsconfig.json`:
     "moduleResolution": "node"
   }
 }
+```
+
+### For Legacy PocketBase Versions or Specific Versions
+
+For older PocketBase versions, use triple-slash directives instead of the `types` field:
+
+```typescript
+/// <reference path="./node_modules/pocketbase-jsvm/index-v22.d.ts" />  // For v0.22
 ```
 
 ## Important Notes
@@ -48,12 +58,12 @@ const myFunc = () => {
 
 `pocketbase-ejs` uses [Upstream Anchoring](https://gist.github.com/benallfree/6baa35e925df06b35b2df755f5776cc7).
 
-- **Our Version** = `Upstream MAJOR.MINOR.(Upstream PATCH × 1000 + Our Revision Number)`
+- **Our Version** = `Upstream MAJOR.MINOR.(Upstream PATCH × 10000 + Our Revision Number)`
 
 Example:
 
-- **Upstream Version**: `1.2.4`
-- **Our First Revision**: `1.2.4001`
+- **Upstream Version**: `0.22.22`
+- **Our First Revision**: `0.22.220001`
 
 This keeps our fork aligned with upstream releases and allows us to manage our own revisions effectively.
 

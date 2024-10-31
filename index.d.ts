@@ -1,3 +1,2 @@
-/// <reference types="./jsvm" />
-/// <reference types="./goja-node" />
-/// <reference lib="es2020" />
+/// <reference path="./jsvm-v23.d.ts" />
+/// <reference path="./base.d.ts" />

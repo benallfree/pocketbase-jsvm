@@ -1,5 +1,11 @@
 # pocketbase-jsvm
 
+## 0.23.10002
+
+### Patch Changes
+
+- Support v22 and lower
+
 ## 0.23.00001
 
 - Definitions for v23
