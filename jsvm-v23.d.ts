@@ -88,7 +88,7 @@ declare function routerAdd(
  *
  * @group PocketBase
  */
-declare function routerUse(...middlewares: Array<string|((e: core.RequestEvent) => void)|Middleware): void;
+declare function routerUse(...middlewares: Array<string|((e: core.RequestEvent) => void)|Middleware>): void;
 
 // -------------------------------------------------------------------
 // baseBinds
