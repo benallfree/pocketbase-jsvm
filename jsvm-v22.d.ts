@@ -12579,7 +12579,7 @@ namespace daos {
    * 
    * Returns a map with the failed expand parameters and their errors.
    */
-  expandRecords(records: Array<(models.Record | undefined)>, expands: Array<string>, optFetchFunc: ExpandFetchFunc): _TygojaDict
+  expandRecords(records: Array<(models.Record | undefined)>, expands: Array<string>, optFetchFunc?: ExpandFetchFunc): _TygojaDict
  }
  // @ts-ignore
  import validation = ozzo_validation

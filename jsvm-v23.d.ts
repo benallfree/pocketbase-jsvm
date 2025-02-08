@@ -12538,6 +12538,7 @@ namespace core {
  interface MetaConfig {
   appName: string
   appURL: string
+  appUrl: string
   senderName: string
   senderAddress: string
   hideControls: boolean
