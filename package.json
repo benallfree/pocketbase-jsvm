@@ -17,5 +17,8 @@
   "files": [
     "*.ts",
     "CHANGELOG.md"
-  ]
+  ],
+  "devDependencies": {
+    "@changesets/cli": "^2.27.12"
+  }
 }
