@@ -6136,7 +6136,7 @@ namespace core {
    * 
    * Returns a map with the failed expand parameters and their errors.
    */
-  expandRecords(records: Array<(Record | undefined)>, expands: Array<string>, optFetchFunc: ExpandFetchFunc): _TygojaDict
+  expandRecords(records: Array<(Record | undefined)>, expands: Array<string>, optFetchFunc?: ExpandFetchFunc): _TygojaDict
   /**
    * OnBootstrap hook is triggered when initializing the main application
    * resources (db, app settings, etc).
@@ -7310,7 +7310,7 @@ namespace core {
   /**
    * Store returns the app runtime store.
    */
-  store(): (store.Store<any>)
+  store<T=any>(): (store.Store<T>)
  }
  interface BaseApp {
   /**
