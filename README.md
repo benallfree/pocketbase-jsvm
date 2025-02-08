@@ -1,6 +1,11 @@
 # TypeScript Typings for PocketBase JSVM
 
-This package provides TypeScript typings for the PocketBase JavaScript Virtual Machine (JSVM), based on Goja and Goja-Node.
+This package provides TypeScript typings for the PocketBase JavaScript Virtual Machine (JSVM).
+
+- PocketBase `jsvm.d.ts`
+- [Goja](https://github.com/dop251/goja) / [EcmaScript 2021](https://262.ecma-international.org/12.0/index.html)
+- [Goja-Node](https://github.com/dop251/goja-nodejs)
+- Custom `jsvm.d.ts` fixes that haven't been merged upstream (see [PATCHES.md](./PATCHES.md))
 
 ## Usage
 
