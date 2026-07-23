@@ -30,6 +30,20 @@ In your `tsconfig.json`:
 
 That's it! enjoy JSVM goodness throughout your project.
 
+## Gotchas
+
+### Handler scope isolation
+
+PocketBase JSVM executes each hook handler in its own isolated context. Functions declared at module (file) scope are **not** visible inside handler callbacks. See [PATCHES.md](./PATCHES.md#handler-scope-isolation) for the fix pattern.
+
+### ES2022+ methods not available
+
+Goja targets ECMAScript 2021. Methods like `.at()`, `.findLast()`, and `Object.hasOwn()` will throw at runtime. See [PATCHES.md](./PATCHES.md#es2022-methods-not-available) for workarounds.
+
+### `$http.send()` returns synchronously
+
+In PocketBase 0.29.x Goja, `$http.send()` returns a synchronous response object — not a Promise. Calling `.catch()` on the result throws `TypeError`. Use try/catch instead. See [PATCHES.md](./PATCHES.md#httpsend-return-type) for the pattern.
+
 ## Versioning Strategy
 
 `pocketbase-jsvm` uses [Upstream Anchoring](https://gist.github.com/benallfree/6baa35e925df06b35b2df755f5776cc7).
