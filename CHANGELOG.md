@@ -1,5 +1,14 @@
 # pocketbase-jsvm
 
+## 0.40.60001
+
+### Minor Changes
+
+- Updated to the PocketBase 0.40.6 JSVM types
+- `$app.store<T>()` now returns `store.Store<string, T>`, following upstream's new two-parameter `Store`
+- Fixed the errors TypeScript reported inside `jsvm.d.ts` (TS1046 and TS2430), so it typechecks without `skipLibCheck`
+- Added `scripts/patch.mjs`, which applies PATCHES.md to a freshly generated `types.d.ts`
+
 ## 0.25.10001
 
 ### Patch Changes

@@ -45,22 +45,24 @@ This keeps our fork aligned with upstream releases and allows us to manage our o
 
 ## Contributing
 
-Help the community by keeping the `jsvm.d.ts` up to date with upstream changes.
+Help the community by keeping `jsvm.d.ts` up to date with upstream.
 
-**Update your fork**
+**Generate the upstream types**
+
+Start the PocketBase version you want with an empty data directory. PocketBase writes its typings to `pb_data/types.d.ts` on startup:
 
 ```bash
-git fetch --all
-git checkout main
+pocketbase superuser upsert you@example.com a-long-password --dir=/tmp/pb_data
+pocketbase serve --dir=/tmp/pb_data
 ```
 
-**Apply the latest upstream changes**
+**Apply the patches**
 
-Copy the latest `jsvm.d.ts` and update the version number in `package.json`.
+```bash
+npm run patch -- /tmp/pb_data/types.d.ts
+```
 
-**Check the diff and reapply patches**
-
-Review the diff and `PATCHES.md`. Reapply patches that haven't been fixed upstream.
+This writes `jsvm.d.ts` with the fixes in [PATCHES.md](./PATCHES.md) applied. Then update the version in `package.json` and add a `CHANGELOG.md` entry.
 
 ### Older Versions of PocketBase
 
